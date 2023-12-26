@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+
+  height: 100%;
+  color: #fff;
+}
+.jogo {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.close button {
+  padding: 1rem;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+section {
+  display: inline-flex;
+  color: aliceblue;
+  background: #0275d8;
+  padding: 1rem;
+  box-shadow: 0px 3px 3px #ffffff;
+  border-radius: 0;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.open {
+  color: #fff;
+}
+.open button {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: none;
+  font-size: 2.9rem;
+  width: 55px;
+  height: 55px;
+  background-color: transparent;
+}
+.breadcrmb {
+  font-family: "Montserrat", sans-serif;
+
+  list-style: none;
+}
+.breadcrmb li {
+  color: #fff;
+  display: inline;
+  font-size: 2rem;
+}
+.breadcrmb li + li:before {
+  padding: 8px;
+  color: rgb(255, 255, 255);
+  content: ">\00a0";
+}
+.breadcrmb li a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+.breadcrmb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.page-title {
+  color: #fff;
+  padding: 2rem 0;
+  display: flex;
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+.page-title a {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  background-color: #0275d8;
+}
+.page-title h1 {
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 100%;
+}
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+.newsletter {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #282b2e57;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  color: #fff;
+  height: min-content;
+  margin: 0rem 0rem 4rem;
+}
+.newsletter img {
+  opacity: 70%;
+}
+.newsletter button {
+  color: #fff;
+  margin: 2rem;
+  background: transparent;
+  border: #fff solid 2px;
+  padding: 0.8rem;
+  border-radius: 2rem;
+}
+.newsletter h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 800;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.ns-word {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: transparent;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #337ab7;
+}
+@media (min-width: 320px) {
+  .sidebar {
+    width: 75vw;
+    height: 100vh;
+    background: #121212;
+    position: relative;
+    left: -25vw;
+    transition: 0.6s ease-in-out;
+  }
+  .sidebar.active {
+    transform: translateX(25vw);
+    transition: 0.6s ease-in-out;
+    z-index: 1;
+  }
+  .containir {
+    width: 100vw;
+    height: min-content;
+    background: #121212;
+    padding: 1rem;
+    position: absolute;
+    left: 0vw;
+    transition: 0.6s ease-in-out;
+  }
+}
+@media (min-width: 768px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    width: 25vw;
+    background: #121212;
+    position: relative;
+    left: -25vw;
+    transition: 0.6s ease-in-out;
+    padding: 2rem;
+  }
+  .s-content {
+    position: relative;
+    display: inline-block;
+  }
+  .sidebar.active {
+    transform: translateX(25vw);
+    transition: 0.6s ease-in-out;
+  }
+  .containir {
+    width: 100vw;
+    background: #121212;
+    padding: 3rem;
+    height: 100%;
+    overflow: auto;
+    right: 0;
+    transition: 0.6s ease-in-out;
+    color: #fff;
+  }
+  .containir.active {
+    width: 75vw;
+    transform: translateX(25vw);
+    transition: 0.6s ease-in-out;
+  }
+
+  .video {
+    background: transparent;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    margin: 0rem 0rem 4rem;
+    border: #0275d8 solid 3px;
+  }
+  .vid-text {
+    padding: 2rem;
+  }
+  .activities {
+    background: transparent;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    margin: 0rem 0rem 4rem;
+    width: 100%;
+  }
+  .courses {
+    width: 45%;
+    border: #fff solid 1px;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  .courses img {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+  }
+  .courses h2 {
+    font-weight: 800;
+    padding: 3rem;
+    margin: 0;
+  }
+  .sched {
+    overflow: hidden;
+    border-radius: 2rem;
+    height: min-content;
+    margin: 0rem 0rem 4rem;
+  }
+}
