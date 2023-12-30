@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="About-us.css">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <span onclick="myFunction()">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <div class="nav-img">
+                <a href="#">
+                    <img src="image/g260.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <span onclick="myabtFunction()">
+                    <h3>Contact Us</h3>
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+        </div>
+        <div class="main-cont" id="main">
+            <div class="container">
+                <div class="page">
+                    <ul class="breadcrmb">
+                        <li><a href="dashboard.html">HOME</a></li>
+                        <li>CONTACT US</li>
+                    </ul>
+                    <div class="pageTitle">
+                        <button>
+                            <i class="fa-solid fa-bars">
+                                <a href="About-us.html"></a>
+                            </i>
+                        </button>
+                        <div class="title">
+                            <h2>CONTACT US</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                            <h2 style="text-align: center;">Your Details</h2>
+                            <div class="column">
+                                <form action="/action_page.php">
+                                    <label for="fname"> Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="lastname" placeholder="Email..">
+                                    <label for="country">Campus</label>
+                                    <select id="country" name="country">
+                                        <option value="australia">one</option>
+                                        <option value="canada">two</option>
+                                        <option value="usa">three</option>
+                                    </select>
+                                    <label for="subject">Subject</label>
+                                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                                    <input type="submit" value="Submit">
+                                </form>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                <footer>
+                    <div class="foot-container">
+                        <p>© 6942 BISACOOL. All rights reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="template.js"></script>
+    <script src="https://kit.fontawesome.com/82989b14ef.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
