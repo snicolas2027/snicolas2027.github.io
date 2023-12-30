@@ -1,0 +1,57 @@
+.pageImg {
+  
+  width: 100%;
+  padding: 1rem;
+  overflow: auto;
+}
+.course-img {
+  width: 100%;
+  overflow: auto;
+  border-radius: 2rem;
+  border: 2px whitesmoke solid;
+}
+.pageImg img {
+  width: 100%;
+  overflow: hidden;
+  opacity: 80%;
+}
+.course-teacher {
+  text-align: center;
+  font-weight: 800;
+  color: whitesmoke;
+}
+.anouncement {
+  border: 2px whitesmoke solid;
+  margin: 1rem 0rem;
+  padding: 0 3rem;
+  min-height: 4.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  font-weight: 100;
+  color: white;
+}
+#ann {
+  box-shadow: 0px 0px 10px #333;
+}
+.ann-img {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 4.5rem;
+  min-height: 4.5rem;
+}
+.ann-img i {
+  font-size: 250%;
+  background: blue;
+  padding: 1rem;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+.pj-t a {
+  color: whitesmoke;
+  text-decoration: none;
+}
